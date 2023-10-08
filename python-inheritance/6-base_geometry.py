@@ -1,8 +1,14 @@
 #!/usr/bin/python3
+"""
+	BaseGeometry
+"""
+
 class BaseGeometry:
-    """Clase para geometría base"""
+    """Create a class"""
 
     def area(self):
-        """Método para calcular el área"""
-        raise NotImplementedError("area() no está implementado")
+        """
+		Area in not implemented
+	"""
+        raise Exception("area() is not implemented")
 
