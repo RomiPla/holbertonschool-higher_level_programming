@@ -1,18 +1,18 @@
 #!/usr/bin/python3
 """
-	Módulo que devuelve Verdadero si el objeto es una instancia de,
-	o si el objeto es una instancia de una clase que hereda
-	de la clase especificada.
-	De lo contrario, Falso.
+	Module that returns True if the object is an instance of,
+    	or if the object is an instance of a class that inherited from,
+    	the specified class; otherwise False
 """
 
 
 def is_kind_of_class(obj, a_class):
-"""
-	Verdadero si el objeto es una instancia de,
-	o si el objeto es una instancia de una clase que heredó de,
-	la clase especificada, De lo contrario, Falso.
-"""
+    """
+        True if the object is an instance of,
+        or if the object is an instance of a
+        class that inherited from, the specified class;
+        Otherwise False
+    """
     if isinstance(obj, a_class):
         return True
     else:
