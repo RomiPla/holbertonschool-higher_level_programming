@@ -2,6 +2,7 @@
 """
 	Module:
 """
+
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 """Class BaseGeometry"""
 
@@ -9,7 +10,7 @@ class Rectangle(BaseGeometry):
 	"""
 		Class Rectangle
 	"""
-    def __init__(self, width, height):
+	def __init__(self, width, height):
         """
 		init
 	"""
@@ -28,5 +29,5 @@ class Rectangle(BaseGeometry):
         """
 		Self str
 	"""
-        return ("[Rectangle] {self.__width}/{self.__height}".format(self._width, self._height))
+        return ("[Rectangle] {}/{}".format(self._width, self._height))
 
