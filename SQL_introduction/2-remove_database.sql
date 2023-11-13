@@ -1,2 +1,2 @@
 -- Borra la base de datos
-REMOVE DATABASE IF EXISTS hbtn_0c_0;
+DROP database if exists hbtn_0c_0;
