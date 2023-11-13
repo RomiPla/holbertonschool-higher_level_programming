@@ -1,2 +1,2 @@
--- Cuenta las instancias de las puntuaciones
-SELECT score, COUNT(1) AS number FROM second_table GROUP BY score ORDER BY number DESC;
+-- Solamente muestra las filas que tienen un valor de nombre
+SELECT score, name FROM second_table HAVING name IS NOT NULL ORDER BY score DESC;
