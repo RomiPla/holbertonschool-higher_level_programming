@@ -1,40 +1,23 @@
-""" Importar el módulo MySQLdb """
-import MySQLdb
-import sys
-
-def main():
-    """ Verificar la cantidad correcta de argumentos """
-    if len(sys.argv) != 4:
-        print("Uso: {} <username> <password> <database>".format(sys.argv[0]))
-        sys.exit(1)
-
-    """ Obtener los argumentos de la línea de comandos """
-    username, password, database = sys.argv[1], sys.argv[2], sys.argv[3]
-
-    # Conectar a la base de datos
-    db = MySQLdb.connect(
-        host="localhost",
-        user=username,
-        passwd=password,
-        db=database,
-        port=3306
-    )
-
-    # Crear un cursor para ejecutar consultas
-    cursor = db.cursor()
-
-    # Ejecutar la consulta SQL
-    query = "SELECT * FROM states ORDER BY id ASC"
-    cursor.execute(query)
-
-    # Obtener y mostrar los resultados
-    results = cursor.fetchall()
-    for row in results:
-        print(row)
-
-    # Cerrar la conexión
-    cursor.close()
-    db.close()
+#!/usr/bin/python3
+"""
+    Lists all the states in the database hbtn_0e_0_usa
+"""
 
 if __name__ == "__main__":
-    main()
+    """
+        Connects to the database and selects the list of states in the database
+    """
+    import MySQLdb
+    import sys
+
+    data_connector = MySQLdb.connect(host="localhost",
+                                     port=3306,
+                                     user=sys.argv[1],
+                                     passwd=sys.argv[2],
+                                     db=sys.argv[3])
+    cursor = data_connector.cursor()
+    cursor.execute("SELECT * FROM states ORDER BY states.id;")
+    for row in cursor.fetchall():
+        print(row)
+    cursor.close()
+    data_connector.close()
