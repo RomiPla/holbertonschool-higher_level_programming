@@ -59,3 +59,4 @@ class Rectangle:
             saved_str += str("#" * self.__width) + '\n'
         saved_str = saved_str[:-1]
         return saved_str
+        
