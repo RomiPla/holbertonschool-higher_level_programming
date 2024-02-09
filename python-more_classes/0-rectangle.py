@@ -1,12 +1,11 @@
 #!/usr/bin/python3
 """
-    Defining an empty class named Rectangle
+    Se define una clase vacia llamada rectangle
 """
 
 
 class Rectangle:
     """
-        Requirements to make an empty class of type rectangle
+        Requisitos para hacer una clase vacia de tipo rectangulo
     """
     pass
-    
