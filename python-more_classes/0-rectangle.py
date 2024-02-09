@@ -9,3 +9,4 @@ class Rectangle:
         Requirements to make an empty class of type rectangle
     """
     pass
+    
