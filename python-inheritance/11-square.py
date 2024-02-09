@@ -29,3 +29,4 @@ class Square(Rectangle):
             Self
         """
         return ("[Square] {}/{}".format(self.__size, self.__size))
+        

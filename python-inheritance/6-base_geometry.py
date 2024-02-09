@@ -11,4 +11,4 @@ class BaseGeometry:
 		Area in not implemented
 	"""
         raise Exception("area() is not implemented")
-
+        
