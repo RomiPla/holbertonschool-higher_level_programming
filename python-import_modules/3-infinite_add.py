@@ -7,4 +7,3 @@ if __name__ == "__main__":
     for iter in range(1, length):
         result += int(thing[iter])
     print(result)
-    
