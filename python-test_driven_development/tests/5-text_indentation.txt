@@ -1,0 +1,86 @@
+===============================
+Test de 5-text_indentation.py
+===============================
+
+"""
+   primero importamos el modulo 5-text_indentation,
+   de este modulo traemos la funcion text_indentation
+"""
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+test 1:
+
+>>> text_indentation("Hello, Everybody. My: Buddies. .")
+Hello, Everybody.
+<BLANKLINE>
+ My:
+<BLANKLINE>
+ Buddies.
+<BLANKLINE>
+ .
+<BLANKLINE>
+<BLANKLINE>
+
+Test 2:
+
+>>> text_indentation("Home Sweet", "Home.")
+Traceback (most recent call last):
+TypeError: text_indentation() takes 1 positional argument but 2 were given
+
+test 3:
+
+>>> text_indentation("Hello      .     I'm     Momo    . and you?   .")
+Hello      .
+<BLANKLINE>
+     I'm     Momo    .
+<BLANKLINE>
+ and you?
+<BLANKLINE>
+   .
+<BLANKLINE>
+<BLANKLINE>
+
+test 4:
+
+>>> text_indentation(300)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+test 5:
+
+>>> text_indentation(240.954)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+test 6:
+
+>>> text_indentation([24, 48, 26, 86])
+Traceback (most recent call last):
+TypeError: text must be a string
+
+test 7:
+
+>>> text_indentation("E. N. A. N. O.")
+E.
+<BLANKLINE>
+ N.
+<BLANKLINE>
+ A.
+<BLANKLINE>
+ N.
+<BLANKLINE>
+ O.
+<BLANKLINE>
+<BLANKLINE>
+
+test 8:
+
+>>> text_indentation({"Momo":7, "Perro":4})
+Traceback (most recent call last):
+TypeError: text must be a string
+
+test 9:
+
+>>> text_indentation("")
+<BLANKLINE>
