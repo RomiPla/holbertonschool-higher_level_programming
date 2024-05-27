@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-   Módulo para verificar si obj es 
+   Módulo para verificar si obj es
    una instancia de una clase heredada de a_class.
 """
 
