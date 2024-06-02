@@ -1,0 +1,32 @@
+#!/usr/bin/python3
+"""
+    Clase Student que define a
+    student by: (based on 9-student.py)
+"""
+
+
+class Student:
+    """
+        Clase student
+    """
+
+    def __init__(self, first_name, last_name, age):
+        """
+            Init
+        """
+        
+
+    def to_json(self, attrs=None):
+        """
+            To json
+        """
+
+        if type(attrs) is list:
+            c = {}
+
+            for a in attrs:
+                if a in self.__dict__:
+                    c[a] = self.__dict__[a]
+            return c
+
+        return self.__dict__
