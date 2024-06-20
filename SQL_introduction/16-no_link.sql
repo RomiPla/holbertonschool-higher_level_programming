@@ -1,2 +1,2 @@
--- This script lists all records from second_table excluding rows without a name.
+-- Este script lista todos records from second_table excluyendo rows un nombre.
 SELECT score, name FROM second_table WHERE name IS NOT NULL AND name != '' ORDER BY score DESC;

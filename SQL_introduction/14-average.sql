@@ -1,2 +1,2 @@
--- This script computes the average score of all records in the table second_table.
+-- -- Este script calcula el puntaje promedio de todos los registros en la tabla second_table.
 SELECT AVG(score) AS average FROM second_table;
