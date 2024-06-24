@@ -1,2 +1,2 @@
--- Este script lista todos records from second_table excluyendo rows un nombre.
-SELECT score, name FROM second_table WHERE name IS NOT NULL AND name != '' ORDER BY score DESC;
+-- Sólo muestra las filas que tienen un valor de nombre
+SELECT score, name FROM second_table HAVING name IS NOT NULL ORDER BY score DESC;
